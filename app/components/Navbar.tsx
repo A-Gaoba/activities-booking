@@ -18,11 +18,6 @@ export default function Navbar() {
           <Link href="/transportation" className="flex items-center">
             <Car className="mr-2" />
             <span className="inline">المواصلات</span>
-            {state.activities.length > 0 && (
-              <span className="ml-1 bg-destructive text-destructive-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                {state.activities.length}
-              </span>
-            )}
           </Link>
         </Button>
         <Button asChild variant="ghost" className="text-primary-foreground hover:bg-primary-foreground hover:text-primary">
