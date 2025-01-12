@@ -30,7 +30,7 @@ const TransportationForm: React.FC = () => {
           <Label htmlFor="destination">الوجهة</Label>
           <Input id="destination" placeholder="أدخل وجهتك" className="neumorphic-inset " />
         </div>
-        <Button className="neumorphic-button text-black hover:text-white w-full">حجز وسيلة النقل</Button>
+        <Button className=" hover:text-white w-full">حجز وسيلة النقل</Button>
       </div>
     </div>
   );

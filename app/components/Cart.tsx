@@ -42,7 +42,6 @@ export default function Cart() {
 
   return (
     <div className="neumorphic p-6 rounded-lg max-w-2xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-center">سلة التسوق</h2>
       <h2 className="text-2xl font-bold mb-4 flex items-center">
         <ShoppingCart className="mr-2" />
         سلة التسوق
@@ -69,7 +68,7 @@ export default function Cart() {
                 <Button
                   variant="destructive"
                   onClick={() => handleRemoveActivity(activity.id)}
-                  className="neumorphic-button"
+                  className="bg-red-500"
                 >
                   إزالة
                 </Button>
@@ -80,7 +79,7 @@ export default function Cart() {
             الإجمالي:{' '}
             {state.activities.reduce((total, activity) => total + activity.price * activity.quantity, 0)} روبل
           </div>
-          <Button className="neumorphic-button w-full" onClick={handleSendToWhatsApp}>
+          <Button className=" w-full" onClick={handleSendToWhatsApp}>
             إرسال الطلب عبر واتساب
           </Button>
         </div>
