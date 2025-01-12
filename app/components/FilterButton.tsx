@@ -14,7 +14,7 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({ filter, setFilter }) => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 bg-black">
+    <div className="flex flex-wrap justify-center gap-4">
       {filters.map(({ id, label }) => (
         <Button
           key={id}
